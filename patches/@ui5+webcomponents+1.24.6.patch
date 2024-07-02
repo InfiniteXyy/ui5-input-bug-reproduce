@@ -1,0 +1,13 @@
+diff --git a/node_modules/@ui5/webcomponents/dist/Input.js b/node_modules/@ui5/webcomponents/dist/Input.js
+index 8ac83aa..a2472c2 100644
+--- a/node_modules/@ui5/webcomponents/dist/Input.js
++++ b/node_modules/@ui5/webcomponents/dist/Input.js
+@@ -442,7 +442,7 @@ let Input = Input_1 = class Input extends UI5Element {
+         const inputDomRef = this.getInputDOMRefSync();
+         const emptyValueFiredOnNumberInput = this.value && this.isTypeNumber && !inputDomRef.value;
+         const eventType = e.inputType
+-            || e.detail.inputType
++            || e.detail?.inputType
+             || "";
+         this._keepInnerValue = false;
+         const allowedEventTypes = [
